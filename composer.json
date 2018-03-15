@@ -1,0 +1,37 @@
+{
+    "name": "ronaldappleton/phalcon72setup",
+    "description": "Setup for starting quickly with phalcon projects",
+    "type": "library",
+    "require": {
+        "illuminate/database": "^5.6",
+        "vlucas/phpdotenv": "^2.4",
+        "illuminate/filesystem": "^5.6",
+        "illuminate/pagination": "^5.6",
+        "doctrine/dbal": "^2.6",
+        "symfony/config": "^4.0",
+        "illuminate/support": "^5.6",
+        "windwalker/renderer": "^3.3",
+        "illuminate/events": "^5.6",
+        "illuminate/contracts": "^5.6",
+        "illuminate/container": "^5.6",
+        "jenssegers/blade": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ronald Appleton",
+            "email": "ron.appleton@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "database/seeders",
+            "database/factories",
+            "database/migrations",
+            "app/Facades"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

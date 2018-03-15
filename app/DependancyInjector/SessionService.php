@@ -1,0 +1,15 @@
+<?php
+/**
+ * Start the session the first time some component request the session service
+ */
+$di->setShared('session', function () {
+    $session = new Phalcon\Session\Adapter\Files;
+    $session->start();
+
+    return $session;
+});
+
+$di->set('flash', function () {
+    return new Phalcon\Flash\Session();
+});
+
